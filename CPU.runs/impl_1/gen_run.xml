@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1779354171">
+  <File Type="PWROPT-DCP" Name="Computer_DP_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="Computer_DP_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Computer_DP.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Computer_DP_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Computer_DP_reports.tcl"/>
+  <File Type="BG-DRC" Name="Computer_DP.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Computer_DP_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Computer_DP_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="Computer_DP.hwdef"/>
+  <File Type="OPT-DCP" Name="Computer_DP_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Computer_DP_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="Computer_DP_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Computer_DP_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Computer_DP_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Computer_DP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Computer_DP_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Computer_DP_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Computer_DP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Computer_DP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Computer_DP_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Computer_DP_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Computer_DP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Computer_DP_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Computer_DP_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Computer_DP_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Computer_DP_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Computer_DP_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Computer_DP.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="Computer_DP_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Computer_DP_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Computer_DP_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Computer_DP_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Computer_DP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Computer_DP_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="Computer_DP.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="Computer_DP_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="Computer_DP.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Computer_DP_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="Computer_DP.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Computer_DP_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="Computer_DP.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Computer_DP_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Computer_DP_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Computer_DP_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Computer_DP_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Computer_DP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Computer_DP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Computer_DP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Computer_DP_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Computer_DP.vdi"/>
+  <File Type="ROUTE-CLK" Name="Computer_DP_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Computer_DP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Computer_DP_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Computer_DP_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Computer_DP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Computer_DP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="Computer_DP.nky"/>
+  <File Type="BITSTR-BMM" Name="Computer_DP_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Computer_DP.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Computer_DP.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Computer_DP.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Centralprocessingunit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ControlUnit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Displayor.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ExternalMemorySV.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Computer_DP.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MEM_data.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MEM_test.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Computer_DP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Pins.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Pins.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

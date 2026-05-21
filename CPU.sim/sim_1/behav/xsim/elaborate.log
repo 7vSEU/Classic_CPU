@@ -10,6 +10,7 @@ Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.ControlUnit
 Compiling module xil_defaultlib.ALU
 Compiling module xil_defaultlib.Centralprocessingunit
+Compiling module xil_defaultlib.Displayor
 Compiling module xil_defaultlib.ExternalMemorySV
 Compiling module xil_defaultlib.Computer_DP
 Compiling module xil_defaultlib.CPUsim

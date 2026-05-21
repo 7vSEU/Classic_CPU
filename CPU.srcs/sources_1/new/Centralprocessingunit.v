@@ -26,7 +26,8 @@ module Centralprocessingunit(
     input wire [15:0] MBR_in,
     output wire [15:0] MBR_out,
     output wire [7:0] MAR_out,
-    output wire RW
+    output wire RW,
+    output reg Signal
     );
     reg [15:0] _INSTRUCTION;
     reg [7:0] MAR = 8'b00000000;
@@ -36,7 +37,7 @@ module Centralprocessingunit(
     reg [15:0] BR;
     
     wire [31:0] ControlSignals;
-    wire [15:0] Flags;
+    reg [15:0] Flags = 16'b0000000000000000;
     wire [15:0] ACC_out;
     
     assign MBR_out = MBR;
@@ -68,6 +69,11 @@ module Centralprocessingunit(
     if(ControlSignals[10])  MAR <= PC;
     if(ControlSignals[5])   MAR <= MBR[7:0];
     if(ControlSignals[6])   PC <= PC+1;
+    
+    if(ACC_out > 0)  Flags[0] <= 1;    
+        else  Flags[0] <= 0; 
+    
+    Signal <= (MAR == 8'h08);
     end
     
     assign RW = ControlSignals[11];

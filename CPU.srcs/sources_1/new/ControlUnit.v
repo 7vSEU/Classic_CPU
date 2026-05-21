@@ -57,9 +57,9 @@ module ControlUnit(
         CM[8'h14] = 32'b000001000000000000000001;           
         CM[8'h15] = 32'b0000010000000100;   //SUB X exit
         CM[8'h16] = 32'b010000000000000000000000;           // JMPGEZ X
-        CM[8'h17] = 32'b0100000000000000;   //JMP X / BRANCH TRUE entrance
+        CM[8'h17] = 32'b0100000000000001;   //JMP X / BRANCH TRUE entrance
         CM[8'h18] = 32'b0000010000000100;   //JMP X / BRANCH TRUE exit
-        CM[8'h19] = 32'b0000000001000000;   //BRANCH FALSE entrance
+        CM[8'h19] = 32'b0000000001000001;   //BRANCH FALSE entrance
         CM[8'h1A] = 32'b0000010000000100;   //BRANCH FALSE exit
         CM[8'h1B] = 32'b01100001;           //MPY X entrance
         CM[8'h1C] = 32'b00001001;
@@ -110,7 +110,7 @@ module ControlUnit(
         if(opcode == 8'b00001110)   CAR <= 8'h31;//SHIFTL
         end
     if(ControlSignals[2])   CAR <= 0;
-    if(ControlSignals[22])  CAR <= Flags_in ? 8'h17 : 8'h19;
+    if(ControlSignals[22])  CAR <= Flags_in[0] ? 8'h17 : 8'h19;
     
     
     end
